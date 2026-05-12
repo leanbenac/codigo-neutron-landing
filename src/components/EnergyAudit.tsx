@@ -42,7 +42,7 @@ const EnergyAudit = () => {
         {/* Header */}
         <div className="text-center space-y-2">
           <h2 className="text-2xl md:text-4xl font-serif italic text-brand-accent font-bold">Autodiagnóstico Rápido</h2>
-          <p className="text-[11px] uppercase tracking-[0.3em] text-white/40 font-bold">Evaluá tus 5 áreas de funcionamiento</p>
+          <p className="text-[11px] uppercase tracking-[0.3em] text-white/70 font-bold">Evaluá tus 5 áreas de funcionamiento</p>
         </div>
 
         {/* Grid */}
@@ -53,7 +53,7 @@ const EnergyAudit = () => {
             {areas.map((area) => (
               <div key={area.id} className="space-y-4 group">
                 <div className="flex justify-between items-end">
-                  <span className="text-[11px] uppercase tracking-[0.3em] font-bold text-white/50 group-hover:text-brand-accent transition-colors">{area.label}</span>
+                  <span className="text-[11px] uppercase tracking-[0.3em] font-bold text-white/80 group-hover:text-brand-accent transition-colors">{area.label}</span>
                   <span className="text-xl font-serif italic text-brand-accent tabular-nums">{scores[area.id]}%</span>
                 </div>
                 <div className="relative h-6 flex items-center">
@@ -72,15 +72,15 @@ const EnergyAudit = () => {
           {/* Result card */}
           <div className="bg-white/5 backdrop-blur-xl p-6 md:p-10 rounded-2xl md:rounded-[2.5rem] border border-white/10 space-y-6">
             <div className="space-y-2">
-              <p className="text-[11px] uppercase tracking-[0.3em] font-bold opacity-30">Lectura de sistema</p>
+              <p className="text-[11px] uppercase tracking-[0.3em] font-bold opacity-60">Lectura de sistema</p>
               <h3 className="text-2xl md:text-3xl font-serif italic leading-tight text-brand-accent">{diagnosis.title}</h3>
             </div>
 
-            <p className="text-sm md:text-base text-white/70 font-light leading-relaxed">
+            <p className="text-sm md:text-base text-white/90 font-light leading-relaxed">
               {diagnosis.text}
             </p>
 
-            <p className="text-xs font-light italic opacity-35 leading-relaxed">
+            <p className="text-xs font-light italic opacity-60 leading-relaxed">
               En el proceso de Código Neutrón trabajamos para que tu balance sea la norma, no la excepción.
             </p>
 

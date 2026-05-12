@@ -40,7 +40,7 @@ const ProcessSection = () => (
                 </div>
                 <div className="space-y-1">
                   <h3 className="text-sm font-bold text-brand-dark">{pillar.title}</h3>
-                  <p className="text-xs font-light text-brand-dark/55 leading-relaxed">{pillar.desc}</p>
+                  <p className="text-xs font-light text-brand-dark/75 leading-relaxed">{pillar.desc}</p>
                 </div>
               </div>
 
@@ -49,7 +49,7 @@ const ProcessSection = () => (
                 <div className="w-1/2 space-y-2">
                   <span className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-accent">{pillar.phase}</span>
                   <h3 className={`text-xl font-serif font-bold text-brand-dark ${i % 2 !== 0 ? 'text-left' : 'text-right'}`}>{pillar.title}</h3>
-                  <p className={`text-base font-light text-brand-dark/55 leading-relaxed ${i % 2 !== 0 ? 'text-left' : 'text-right'}`}>{pillar.desc}</p>
+                  <p className={`text-base font-light text-brand-dark/75 leading-relaxed ${i % 2 !== 0 ? 'text-left' : 'text-right'}`}>{pillar.desc}</p>
                 </div>
                 <div className="relative z-10 shrink-0">
                   <div className="w-7 h-7 rounded-full bg-white border-2 border-brand-accent flex items-center justify-center shadow-md shadow-brand-accent/15">

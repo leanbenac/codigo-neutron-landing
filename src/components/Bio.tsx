@@ -7,8 +7,8 @@ const Bio = () => (
 
         {/* Photo - shows first on mobile */}
         <motion.div
-          initial={{ opacity: 0, x: -16 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="relative"
         >
@@ -23,8 +23,8 @@ const Bio = () => (
 
         {/* Text */}
         <motion.div
-          initial={{ opacity: 0, x: 16 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="space-y-6 md:space-y-8"
         >
@@ -39,16 +39,16 @@ const Bio = () => (
           <div className="h-px w-10 bg-brand-accent" />
 
           <div className="space-y-3 md:space-y-4">
-            <p className="text-sm md:text-base font-light text-brand-dark/65 leading-relaxed">
+            <p className="text-sm md:text-base font-light text-brand-dark/85 leading-relaxed">
               Hace más de 13 años acompaño a profesionales y emprendedores en procesos de cambio personal y mental. Trabajo con quienes ya agotaron las explicaciones y necesitan que algo realmente cambie de fondo.
             </p>
-            <p className="text-sm md:text-base font-light text-brand-dark/65 leading-relaxed">
+            <p className="text-sm md:text-base font-light text-brand-dark/85 leading-relaxed">
               Creadora de Código Neutrón, un método de intervención estructurado sobre patrones mentales con métricas verificables en 5 áreas: <span className="font-medium text-brand-dark">Paz, Economía, Relaciones, Adaptabilidad y Salud.</span>
             </p>
           </div>
 
           <blockquote className="border-l-2 border-brand-accent pl-5 py-1">
-            <p className="text-sm font-serif italic text-brand-dark/55 leading-relaxed">
+            <p className="text-sm font-serif italic text-brand-dark/80 leading-relaxed">
               "No trabajo con motivación ni con promesas. Trabajo con el funcionamiento real de la mente."
             </p>
           </blockquote>

@@ -29,8 +29,8 @@ const Testimonials = () => (
     <div className="max-w-5xl mx-auto space-y-10 md:space-y-14">
       
       <motion.div
-        initial={{ opacity: 0, y: 14 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         className="space-y-2"
       >
@@ -51,7 +51,7 @@ const Testimonials = () => (
             transition={{ delay: i * 0.08, duration: 0.6 }}
             className="bg-white border border-brand-muted rounded-2xl p-6 flex flex-col gap-5"
           >
-            <p className="text-sm font-light text-brand-dark/85 leading-relaxed flex-1">
+            <p className="text-sm font-light text-brand-dark/95 leading-relaxed flex-1">
               "{story.quote}"
             </p>
             <div className="flex items-center gap-3 pt-4 border-t border-brand-muted">
@@ -60,14 +60,14 @@ const Testimonials = () => (
               </div>
               <div>
                 <p className="text-sm font-bold text-brand-dark leading-none">{story.name}</p>
-                <p className="text-[11px] uppercase tracking-wider text-brand-dark/50 font-medium mt-0.5">{story.role} · {story.location}</p>
+                <p className="text-[11px] uppercase tracking-wider text-brand-dark/70 font-medium mt-0.5">{story.role} · {story.location}</p>
               </div>
             </div>
           </motion.div>
         ))}
       </div>
 
-      <p className="text-[11px] opacity-35 uppercase tracking-widest font-bold text-center">
+      <p className="text-[11px] opacity-60 uppercase tracking-widest font-bold text-center">
         Trabajo con profesionales de Argentina, España y México.
       </p>
     </div>

@@ -18,27 +18,27 @@ const Investment = () => (
           Individual. Concreto.{' '}
           <span className="italic font-light text-brand-accent">Con métricas reales.</span>
         </h2>
-        <p className="text-sm md:text-base font-light text-brand-dark/50 leading-relaxed max-w-xl">
+        <p className="text-sm md:text-base font-light text-brand-dark/75 leading-relaxed max-w-xl">
           La mayoría llega cuando ya no quiere sostener el mismo nivel de desgaste otro año más.
         </p>
       </div>
 
       <div className="bg-brand-bg border border-brand-muted rounded-2xl md:rounded-3xl p-6 md:p-12 space-y-8">
         <motion.div 
-          initial={{ scale: 0.95, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="space-y-1"
         >
           <p className="text-4xl md:text-6xl font-bold tracking-tighter text-brand-dark">USD 2.500</p>
-          <p className="text-[11px] uppercase tracking-[0.35em] font-bold opacity-30">Proceso individual · 3 meses · 24 sesiones</p>
+          <p className="text-[11px] uppercase tracking-[0.35em] font-bold opacity-60">Proceso individual · 3 meses · 24 sesiones</p>
         </motion.div>
 
         <div className="h-px bg-brand-muted" />
 
         <ul className="space-y-4">
           {includes.map((item, i) => (
-            <li key={i} className="flex gap-3 items-start font-light text-sm md:text-base text-brand-dark/70">
+            <li key={i} className="flex gap-3 items-start font-light text-sm md:text-base text-brand-dark/90">
               <div className="w-1.5 h-1.5 rounded-full bg-brand-accent mt-2 shrink-0" />
               {item}
             </li>
@@ -54,7 +54,7 @@ const Investment = () => (
           >
             EVALUAR SI ESTE PROCESO<br className="sm:hidden" /> TIENE SENTIDO PARA MÍ
           </a>
-          <p className="text-[10px] font-light opacity-35 italic text-center leading-snug uppercase tracking-widest">
+          <p className="text-[10px] font-light opacity-60 italic text-center leading-snug uppercase tracking-widest">
             Si en la primera semana sentís que no es para vos, devolvemos el 100% de tu inversión.
           </p>
         </div>

@@ -54,7 +54,7 @@ const FAQItem = ({ q, a }: { q: string; a: string; key?: any }) => {
         transition={{ duration: 0.25, ease: "easeInOut" }}
         className="overflow-hidden"
       >
-        <p className="text-sm font-light text-brand-dark/60 leading-relaxed pl-4 border-l-2 border-brand-accent/15 pb-1">
+        <p className="text-sm font-light text-brand-dark/85 leading-relaxed pl-4 border-l-2 border-brand-accent/15 pb-1">
           {a}
         </p>
       </motion.div>

@@ -15,8 +15,8 @@ const HowItWorks = () => (
     <div className="max-w-5xl mx-auto space-y-10 md:space-y-16">
       
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         className="space-y-3 max-w-2xl"
       >
@@ -25,7 +25,7 @@ const HowItWorks = () => (
           Cómo funciona<br />
           <span className="italic font-light text-brand-accent">el proceso</span>
         </h2>
-        <p className="text-sm md:text-base font-light text-brand-dark/55 leading-relaxed">
+        <p className="text-sm md:text-base font-light text-brand-dark/75 leading-relaxed">
           No es terapia. No es coaching motivacional. Es un proceso de intervención estructurado sobre el funcionamiento mental real, con herramientas y métricas.
         </p>
       </motion.div>
@@ -44,7 +44,7 @@ const HowItWorks = () => (
               <span className="text-xs font-black text-brand-accent/35 group-hover:text-brand-accent/70 transition-colors shrink-0 pt-0.5 tabular-nums">{step.n}</span>
               <div className="space-y-1">
                 <p className="text-sm font-bold text-brand-dark/90 leading-snug">{step.label}</p>
-                <p className="text-xs md:text-sm font-light text-brand-dark/65 leading-relaxed">{step.desc}</p>
+                <p className="text-xs md:text-sm font-light text-brand-dark/75 leading-relaxed">{step.desc}</p>
               </div>
             </div>
           </motion.div>
@@ -65,7 +65,7 @@ const HowItWorks = () => (
         >
           EVALUAR SI ESTE PROCESO<br className="sm:hidden" /> TIENE SENTIDO PARA MÍ
         </a>
-        <p className="text-[10px] uppercase tracking-widest opacity-35 font-bold">Proceso individual · 24 sesiones</p>
+        <p className="text-[10px] uppercase tracking-widest opacity-60 font-bold">Proceso individual · 24 sesiones</p>
       </motion.div>
 
     </div>

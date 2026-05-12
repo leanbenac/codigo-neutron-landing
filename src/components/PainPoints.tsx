@@ -26,15 +26,15 @@ const PainPoints = () => {
                 className="group flex gap-5 items-start p-5 md:p-6 rounded-xl border border-brand-muted hover:border-brand-accent/30 hover:bg-white transition-all shadow-sm hover:shadow-md"
               >
                 <span className="text-xs font-black text-brand-accent/30 group-hover:text-brand-accent/60 transition-colors shrink-0 pt-0.5 tabular-nums">0{i + 1}</span>
-                <p className="text-sm md:text-base font-light text-brand-dark/80 group-hover:text-brand-dark transition-colors leading-relaxed">{point}</p>
+                <p className="text-sm md:text-base font-light text-brand-dark/90 group-hover:text-brand-dark transition-colors leading-relaxed">{point}</p>
               </motion.div>
             ))}
           </div>
 
           {/* Title Column (Right) */}
           <motion.div
-            initial={{ opacity: 0, y: 14 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             className="space-y-6 md:sticky md:top-32 order-1 md:order-2"
           >
@@ -46,7 +46,7 @@ const PainPoints = () => {
               </h2>
             </div>
             <div className="h-px w-12 bg-brand-accent" />
-            <p className="text-base md:text-lg font-light text-brand-dark/50 leading-relaxed max-w-sm">
+            <p className="text-base md:text-lg font-light text-brand-dark/75 leading-relaxed max-w-sm">
               El agotamiento no siempre es falta de ganas. A veces es el resultado de un sistema interno que opera con demasiada fricción y un alto costo de procesamiento.
             </p>
           </motion.div>

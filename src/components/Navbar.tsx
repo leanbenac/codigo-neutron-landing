@@ -36,7 +36,7 @@ const Navbar = () => {
       }`}>
         <div className="flex flex-col leading-none">
           <span className="font-serif text-base font-bold tracking-tight text-brand-dark">CÓDIGO NEUTRÓN</span>
-          <span className="text-[10px] uppercase tracking-widest text-brand-dark/40 font-medium mt-0.5">por Patricia Pietrasanta</span>
+          <span className="text-[10px] uppercase tracking-widest text-brand-dark/60 font-medium mt-0.5">por Patricia Pietrasanta</span>
         </div>
         
         <div className="hidden md:flex items-center gap-8 text-[10px] uppercase tracking-widest font-bold text-brand-dark/60">

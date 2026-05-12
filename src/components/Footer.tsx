@@ -6,9 +6,9 @@ const Footer = () => (
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
         <div>
           <p className="font-serif text-xl font-bold tracking-tight">CÓDIGO NEUTRÓN</p>
-          <p className="text-[10px] uppercase tracking-widest text-white/30 font-medium mt-1">por Patricia Pietrasanta</p>
+          <p className="text-[10px] uppercase tracking-widest text-white/60 font-medium mt-1">por Patricia Pietrasanta</p>
         </div>
-        <div className="flex flex-wrap gap-x-6 gap-y-4 md:gap-8 text-[10px] uppercase tracking-[0.15em] md:tracking-[0.35em] font-bold text-white/40 w-full md:w-auto">
+        <div className="flex flex-wrap gap-x-6 gap-y-4 md:gap-8 text-[10px] uppercase tracking-[0.15em] md:tracking-[0.35em] font-bold text-white/60 w-full md:w-auto">
           <a href="#proceso" className="hover:text-brand-accent transition-colors">El Proceso</a>
           <a href="#testimonios" className="hover:text-brand-accent transition-colors">Resultados</a>
           <a href="#contacto" className="hover:text-brand-accent transition-colors">Contacto</a>
@@ -29,7 +29,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="h-px w-full bg-white/5" />
-      <p className="text-[10px] uppercase tracking-[0.5em] opacity-25 font-bold">© 2026 · Código Neutrón · Todos los derechos reservados</p>
+      <p className="text-[10px] uppercase tracking-[0.5em] opacity-50 font-bold">© 2026 · Código Neutrón · Todos los derechos reservados</p>
     </div>
   </footer>
 );
