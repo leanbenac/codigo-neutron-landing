@@ -28,10 +28,10 @@ const ProcessSection = () => (
           {pillars.map((pillar, i) => (
             <motion.div 
               key={i} 
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ delay: i * 0.08 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.1, margin: "0px 0px -20px 0px" }}
+              transition={{ delay: i * 0.05, duration: 0.6 }}
             >
               {/* Mobile card layout */}
               <div className="md:hidden flex gap-4 p-5 bg-white border border-brand-muted rounded-xl">

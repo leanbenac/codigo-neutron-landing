@@ -8,7 +8,7 @@ const Footer = () => (
           <p className="font-serif text-xl font-bold tracking-tight">CÓDIGO NEUTRÓN</p>
           <p className="text-[10px] uppercase tracking-widest text-white/30 font-medium mt-1">por Patricia Pietrasanta</p>
         </div>
-        <div className="flex gap-8 text-[10px] uppercase tracking-[0.35em] font-bold text-white/40">
+        <div className="flex flex-wrap gap-x-6 gap-y-4 md:gap-8 text-[10px] uppercase tracking-[0.15em] md:tracking-[0.35em] font-bold text-white/40 w-full md:w-auto">
           <a href="#proceso" className="hover:text-brand-accent transition-colors">El Proceso</a>
           <a href="#testimonios" className="hover:text-brand-accent transition-colors">Resultados</a>
           <a href="#contacto" className="hover:text-brand-accent transition-colors">Contacto</a>

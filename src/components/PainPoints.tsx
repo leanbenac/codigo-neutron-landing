@@ -19,14 +19,14 @@ const PainPoints = () => {
             {points.map((point, i) => (
               <motion.div 
                 key={i}
-                initial={{ opacity: 0, x: -12 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ delay: i * 0.08, duration: 0.45 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.1, margin: "0px 0px -20px 0px" }}
+                transition={{ delay: i * 0.05, duration: 0.5 }}
                 className="group flex gap-5 items-start p-5 md:p-6 rounded-xl border border-brand-muted hover:border-brand-accent/30 hover:bg-white transition-all shadow-sm hover:shadow-md"
               >
                 <span className="text-xs font-black text-brand-accent/30 group-hover:text-brand-accent/60 transition-colors shrink-0 pt-0.5 tabular-nums">0{i + 1}</span>
-                <p className="text-sm md:text-base font-light text-brand-dark/65 group-hover:text-brand-dark/80 transition-colors leading-relaxed">{point}</p>
+                <p className="text-sm md:text-base font-light text-brand-dark/80 group-hover:text-brand-dark transition-colors leading-relaxed">{point}</p>
               </motion.div>
             ))}
           </div>

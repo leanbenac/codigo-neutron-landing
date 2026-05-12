@@ -34,17 +34,17 @@ const HowItWorks = () => (
         {steps.map((step, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ delay: i * 0.06, duration: 0.4, ease: "easeOut" }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.1, margin: "0px 0px -20px 0px" }}
+            transition={{ delay: i * 0.05, duration: 0.5 }}
             className={`group p-5 md:p-6 border border-brand-muted rounded-xl hover:border-brand-accent/40 hover:shadow-sm transition-all bg-white ${i === 6 ? 'sm:col-span-2' : ''}`}
           >
             <div className="flex gap-4 items-start">
               <span className="text-xs font-black text-brand-accent/35 group-hover:text-brand-accent/70 transition-colors shrink-0 pt-0.5 tabular-nums">{step.n}</span>
               <div className="space-y-1">
-                <p className="text-sm font-bold text-brand-dark leading-snug">{step.label}</p>
-                <p className="text-xs md:text-sm font-light text-brand-dark/50 leading-relaxed">{step.desc}</p>
+                <p className="text-sm font-bold text-brand-dark/90 leading-snug">{step.label}</p>
+                <p className="text-xs md:text-sm font-light text-brand-dark/65 leading-relaxed">{step.desc}</p>
               </div>
             </div>
           </motion.div>

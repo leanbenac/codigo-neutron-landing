@@ -45,13 +45,13 @@ const Testimonials = () => (
         {stories.map((story, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, y: 14 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ delay: i * 0.1, duration: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.1, margin: "0px 0px -20px 0px" }}
+            transition={{ delay: i * 0.08, duration: 0.6 }}
             className="bg-white border border-brand-muted rounded-2xl p-6 flex flex-col gap-5"
           >
-            <p className="text-sm font-light text-brand-dark/70 leading-relaxed flex-1">
+            <p className="text-sm font-light text-brand-dark/85 leading-relaxed flex-1">
               "{story.quote}"
             </p>
             <div className="flex items-center gap-3 pt-4 border-t border-brand-muted">
@@ -60,7 +60,7 @@ const Testimonials = () => (
               </div>
               <div>
                 <p className="text-sm font-bold text-brand-dark leading-none">{story.name}</p>
-                <p className="text-[11px] uppercase tracking-wider text-brand-dark/40 font-medium mt-0.5">{story.role} · {story.location}</p>
+                <p className="text-[11px] uppercase tracking-wider text-brand-dark/50 font-medium mt-0.5">{story.role} · {story.location}</p>
               </div>
             </div>
           </motion.div>
