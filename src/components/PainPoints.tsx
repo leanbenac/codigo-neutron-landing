@@ -17,17 +17,13 @@ const PainPoints = () => {
           {/* Cards Column (Left) */}
           <div className="space-y-3 order-2 md:order-1">
             {points.map((point, i) => (
-              <motion.div 
+              <div 
                 key={i}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true, amount: 0.1, margin: "0px 0px -20px 0px" }}
-                transition={{ delay: i * 0.05, duration: 0.5 }}
                 className="group flex gap-5 items-start p-5 md:p-6 rounded-xl border border-brand-muted hover:border-brand-accent/30 hover:bg-white transition-all shadow-sm hover:shadow-md"
               >
-                <span className="text-xs font-black text-brand-accent/30 group-hover:text-brand-accent/60 transition-colors shrink-0 pt-0.5 tabular-nums">0{i + 1}</span>
-                <p className="text-sm md:text-base font-light text-brand-dark/90 group-hover:text-brand-dark transition-colors leading-relaxed">{point}</p>
-              </motion.div>
+                <span className="text-xs font-black text-brand-accent/40 group-hover:text-brand-accent/80 transition-colors shrink-0 pt-0.5 tabular-nums">0{i + 1}</span>
+                <p className="text-sm md:text-base font-medium text-brand-dark group-hover:text-brand-dark transition-colors leading-relaxed">{point}</p>
+              </div>
             ))}
           </div>
 
@@ -46,7 +42,7 @@ const PainPoints = () => {
               </h2>
             </div>
             <div className="h-px w-12 bg-brand-accent" />
-            <p className="text-base md:text-lg font-light text-brand-dark/75 leading-relaxed max-w-sm">
+            <p className="text-base md:text-lg font-normal text-brand-dark/90 leading-relaxed max-w-sm">
               El agotamiento no siempre es falta de ganas. A veces es el resultado de un sistema interno que opera con demasiada fricción y un alto costo de procesamiento.
             </p>
           </motion.div>

@@ -26,13 +26,7 @@ const ProcessSection = () => (
 
         <div className="space-y-4 md:space-y-10">
           {pillars.map((pillar, i) => (
-            <motion.div 
-              key={i} 
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.1, margin: "0px 0px -20px 0px" }}
-              transition={{ delay: i * 0.05, duration: 0.6 }}
-            >
+            <div key={i}>
               {/* Mobile card layout */}
               <div className="md:hidden flex gap-4 p-5 bg-white border border-brand-muted rounded-xl">
                 <div className="shrink-0 pt-0.5">
@@ -40,7 +34,7 @@ const ProcessSection = () => (
                 </div>
                 <div className="space-y-1">
                   <h3 className="text-sm font-bold text-brand-dark">{pillar.title}</h3>
-                  <p className="text-xs font-light text-brand-dark/75 leading-relaxed">{pillar.desc}</p>
+                  <p className="text-xs font-normal text-brand-dark/90 leading-relaxed">{pillar.desc}</p>
                 </div>
               </div>
 
@@ -49,7 +43,7 @@ const ProcessSection = () => (
                 <div className="w-1/2 space-y-2">
                   <span className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-accent">{pillar.phase}</span>
                   <h3 className={`text-xl font-serif font-bold text-brand-dark ${i % 2 !== 0 ? 'text-left' : 'text-right'}`}>{pillar.title}</h3>
-                  <p className={`text-base font-light text-brand-dark/75 leading-relaxed ${i % 2 !== 0 ? 'text-left' : 'text-right'}`}>{pillar.desc}</p>
+                  <p className={`text-base font-normal text-brand-dark/90 leading-relaxed ${i % 2 !== 0 ? 'text-left' : 'text-right'}`}>{pillar.desc}</p>
                 </div>
                 <div className="relative z-10 shrink-0">
                   <div className="w-7 h-7 rounded-full bg-white border-2 border-brand-accent flex items-center justify-center shadow-md shadow-brand-accent/15">
@@ -58,7 +52,7 @@ const ProcessSection = () => (
                 </div>
                 <div className="w-1/2" />
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
