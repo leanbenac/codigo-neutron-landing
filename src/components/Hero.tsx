@@ -37,7 +37,7 @@ const Hero = () => (
           href="https://calendly.com/patopietra/new-meeting?month=2026-05"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-brand-dark text-white w-full sm:w-auto px-6 py-4 md:py-5 rounded-sm text-[11px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.2em] font-bold hover:bg-brand-accent transition-all shadow-lg shadow-brand-dark/10 flex sm:inline-flex items-center justify-center text-center leading-tight"
+          className="bg-brand-dark text-white w-full sm:w-auto px-10 py-5 rounded-md text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold hover:bg-brand-accent hover:scale-[1.02] hover:shadow-2xl hover:shadow-brand-accent/20 transition-all duration-500 flex sm:inline-flex items-center justify-center text-center leading-tight"
         >
           EVALUAR SI ESTE PROCESO<br className="sm:hidden" /> TIENE SENTIDO PARA MÍ
         </a>

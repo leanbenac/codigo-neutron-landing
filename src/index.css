@@ -28,6 +28,12 @@
   body {
     @apply bg-brand-bg text-brand-dark selection:bg-brand-accent/20 font-sans;
     font-feature-settings: "ss01", "ss02", "cv01", "cv11";
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+    line-height: 1.1;
   }
 
   /* Editorial Grain Effect */
