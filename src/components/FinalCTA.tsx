@@ -20,7 +20,7 @@ const FinalCTA = () => (
           rel="noopener noreferrer"
           className="bg-brand-dark text-white w-full sm:w-auto px-12 py-6 rounded-md text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold hover:bg-brand-accent hover:scale-[1.02] hover:shadow-2xl hover:shadow-brand-accent/20 transition-all duration-500 flex sm:inline-flex items-center justify-center text-center leading-tight shadow-xl"
         >
-          EVALUAR SI ESTE PROCESO<br className="sm:hidden" /> TIENE SENTIDO PARA MÍ
+          CONOCER LA PROPUESTA
         </a>
         <p className="text-[10px] uppercase tracking-[0.4em] font-bold opacity-30">Lugares limitados · Respuesta en menos de 24 horas</p>
       </div>

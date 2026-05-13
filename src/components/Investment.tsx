@@ -52,7 +52,7 @@ const Investment = () => (
             rel="noopener noreferrer"
             className="w-full bg-brand-dark text-white px-6 py-4 md:py-5 rounded-sm text-[11px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.2em] font-bold hover:bg-brand-accent transition-all shadow-lg flex items-center justify-center text-center leading-tight"
           >
-            EVALUAR SI ESTE PROCESO<br className="sm:hidden" /> TIENE SENTIDO PARA MÍ
+            CONOCER LA PROPUESTA
           </a>
           <p className="text-[10px] font-light opacity-60 italic text-center leading-snug uppercase tracking-widest">
             Si en la primera semana sentís que no es para vos, devolvemos el 100% de tu inversión.

@@ -14,7 +14,7 @@ const Footer = () => (
           <a href="#contacto" className="hover:text-brand-accent transition-colors">Contacto</a>
         </div>
         <div className="flex gap-3">
-          <a href="https://www.instagram.com/patrilifecoach/" target="_blank" rel="noopener" className="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center hover:bg-brand-accent hover:border-brand-accent transition-all">
+          <a href="https://www.instagram.com/patri.pietra/" target="_blank" rel="noopener" className="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center hover:bg-brand-accent hover:border-brand-accent transition-all">
             <Instagram size={16} />
           </a>
           <a href="https://www.linkedin.com/in/patricia-pietrasanta/" target="_blank" rel="noopener" className="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center hover:bg-brand-accent hover:border-brand-accent transition-all">
