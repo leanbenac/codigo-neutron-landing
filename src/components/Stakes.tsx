@@ -10,7 +10,7 @@ const Stakes = () => (
   <section className="py-20 md:py-32 px-5 md:px-8 border-t border-brand-muted/50">
     <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
       {/* Columna Izquierda: Textos */}
-      <div className="space-y-6 md:space-y-8 sticky top-32">
+      <div className="space-y-6 md:space-y-8 lg:sticky lg:top-32">
         <div className="space-y-4 md:space-y-5">
           <p className="text-[11px] uppercase tracking-[0.45em] font-bold text-brand-accent">Lo que está en juego</p>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-brand-dark leading-tight">
