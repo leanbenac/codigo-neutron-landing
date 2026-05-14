@@ -34,9 +34,12 @@ const Navbar = () => {
           ? "bg-white/95 backdrop-blur-md border-brand-muted shadow-sm" 
           : "bg-white/20 backdrop-blur-sm border-transparent"
       }`}>
-        <div className="flex flex-col leading-none">
-          <span className="font-serif text-base font-bold tracking-tight text-brand-dark">CÓDIGO NEUTRÓN</span>
-          <span className="text-[10px] uppercase tracking-widest text-brand-dark/60 font-medium mt-0.5">por Patricia Pietrasanta</span>
+        <div className="flex items-center gap-3">
+          <img src="/brain-logo.png" alt="Código Neutrón Logo" className="w-10 h-10 md:w-12 md:h-12 object-contain mix-blend-multiply" />
+          <div className="flex flex-col leading-none">
+            <span className="font-serif text-base font-bold tracking-tight text-brand-dark">CÓDIGO NEUTRÓN</span>
+            <span className="text-[10px] uppercase tracking-widest text-brand-dark/60 font-medium mt-0.5">por Patricia Pietrasanta</span>
+          </div>
         </div>
         
         <div className="hidden md:flex items-center gap-8 text-[10px] uppercase tracking-widest font-bold text-brand-dark/60">

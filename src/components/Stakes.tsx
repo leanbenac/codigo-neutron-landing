@@ -20,7 +20,7 @@ const Stakes = () => (
             Es todo lo que ese agotamiento empieza a afectar sin que te des cuenta.
           </p>
         </div>
-        
+
         <p className="hidden lg:block text-sm md:text-base font-light text-brand-dark/60 leading-relaxed max-w-md">
           Cuanto más tiempo normalizás eso, más se convierte en tu forma habitual de vivir.
         </p>
