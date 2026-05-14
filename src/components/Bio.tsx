@@ -12,7 +12,7 @@ const Bio = () => (
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="aspect-[4/3] sm:aspect-[4/4] lg:aspect-[4/5] rounded-2xl md:rounded-3xl overflow-hidden bg-brand-muted/20">
+          <div className="aspect-[3/4] md:aspect-[4/5] lg:aspect-[3/4] max-w-sm mx-auto rounded-2xl md:rounded-3xl overflow-hidden bg-brand-muted/20">
             <img 
               src="https://coachinginline.weebly.com/uploads/1/7/1/5/17154702/published/generated-image-october-31-2025-12-19pm-2-1.jpg?1778345920" 
               alt="Patricia Pietrasanta" 
