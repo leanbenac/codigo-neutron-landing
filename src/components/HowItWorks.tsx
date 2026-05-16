@@ -11,7 +11,7 @@ const steps = [
 ];
 
 const HowItWorks = () => (
-  <section className="py-16 md:py-28 px-5 md:px-6 bg-white border-t border-brand-muted/50">
+  <section id="metodologia" className="py-16 md:py-28 px-5 md:px-6 bg-white border-t border-brand-muted/50">
     <div className="max-w-5xl mx-auto space-y-10 md:space-y-16">
       
       <motion.div
@@ -54,14 +54,14 @@ const HowItWorks = () => (
         className="flex flex-col gap-3 items-start w-full"
       >
         <a
-          href="https://calendly.com/patopietra/new-meeting?month=2026-05"
+          href="https://wa.me/5491161361269?text=Hola%20Patricia%2C%20le%C3%AD%20sobre%20el%20Programa%20C%C3%B3digo%20Neutr%C3%B3n%20y%20quiero%20evaluar%20mi%20situaci%C3%B3n."
           target="_blank"
           rel="noopener noreferrer"
           className="bg-brand-dark text-white w-full sm:w-auto px-10 py-5 rounded-md text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold hover:bg-brand-accent hover:scale-[1.02] hover:shadow-2xl hover:shadow-brand-accent/20 transition-all duration-500 flex sm:inline-flex items-center justify-center text-center leading-tight"
         >
           CONOCER LA PROPUESTA
         </a>
-        <p className="text-[10px] uppercase tracking-widest opacity-60 font-bold">Proceso individual · 24 sesiones</p>
+        <p className="text-[10px] uppercase tracking-widest opacity-60 font-bold">Acompañamiento individual integral · 3 meses</p>
       </motion.div>
 
     </div>

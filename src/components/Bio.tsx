@@ -16,6 +16,7 @@ const Bio = () => (
             <img 
               src="https://coachinginline.weebly.com/uploads/1/7/1/5/17154702/published/generated-image-october-31-2025-12-19pm-2-1.jpg?1778345920" 
               alt="Patricia Pietrasanta" 
+              loading="lazy"
               className="w-full h-full object-cover object-top"
             />
           </div>

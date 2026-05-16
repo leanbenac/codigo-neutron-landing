@@ -11,6 +11,7 @@ import Investment from './components/Investment';
 import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 import { Analytics } from "@vercel/analytics/react";
 
@@ -25,12 +26,13 @@ export default function App() {
         <Stakes />
         <HowItWorks />
         <ProcessSection />
-        <Testimonials />
         <Bio />
+        <Testimonials />
         <Investment />
         <FAQ />
         <FinalCTA />
       </main>
+      <FloatingWhatsApp />
       <Footer />
       <Analytics />
     </div>

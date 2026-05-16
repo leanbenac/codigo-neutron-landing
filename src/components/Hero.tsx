@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 
 const Hero = () => (
-  <section className="relative pt-28 pb-12 px-5 min-h-[100svh] flex flex-col items-center justify-center text-center overflow-hidden">
+  <section id="inicio" className="relative pt-28 pb-12 px-5 min-h-[100svh] flex flex-col items-center justify-center text-center overflow-hidden">
     <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -34,14 +34,14 @@ const Hero = () => (
       {/* CTA */}
       <div className="space-y-3 pt-4 w-full">
         <a 
-          href="https://calendly.com/patopietra/new-meeting?month=2026-05"
+          href="https://wa.me/5491161361269?text=Hola%20Patricia%2C%20le%C3%AD%20sobre%20el%20Programa%20C%C3%B3digo%20Neutr%C3%B3n%20y%20quiero%20evaluar%20mi%20situaci%C3%B3n."
           target="_blank"
           rel="noopener noreferrer"
           className="bg-brand-dark text-white w-full sm:w-auto px-10 py-5 rounded-md text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold hover:bg-brand-accent hover:scale-[1.02] hover:shadow-2xl hover:shadow-brand-accent/20 transition-all duration-500 flex sm:inline-flex items-center justify-center text-center leading-tight"
         >
           CONOCER LA PROPUESTA
         </a>
-        <p className="text-[10px] uppercase tracking-widest opacity-60 font-bold">30 minutos · Sin presión · Sin venta forzada</p>
+        <p className="text-[10px] uppercase tracking-widest opacity-60 font-bold">15 minutos · Sin presión</p>
       </div>
     </motion.div>
 

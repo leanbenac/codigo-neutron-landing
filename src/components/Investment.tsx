@@ -9,7 +9,7 @@ const includes = [
 ];
 
 const Investment = () => (
-  <section className="py-16 md:py-28 px-5 md:px-6 bg-white border-t border-brand-muted/50">
+  <section id="inversion" className="py-16 md:py-28 px-5 md:px-6 bg-white border-t border-brand-muted/50">
     <div className="max-w-3xl mx-auto space-y-10 md:space-y-14">
 
       <div className="space-y-2">
@@ -24,6 +24,9 @@ const Investment = () => (
       </div>
 
       <div className="bg-brand-bg border border-brand-muted rounded-2xl md:rounded-3xl p-6 md:p-12 space-y-8">
+        <p className="text-sm md:text-base font-medium text-brand-dark/90 italic leading-relaxed">
+          "Un proceso de reingeniería mental diseñado para líderes y empresarios que manejan decisiones de alto valor."
+        </p>
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -31,7 +34,7 @@ const Investment = () => (
           className="space-y-1"
         >
           <p className="text-4xl md:text-6xl font-bold tracking-tighter text-brand-dark">USD 2.500</p>
-          <p className="text-[11px] uppercase tracking-[0.35em] font-bold opacity-60">Proceso individual · 3 meses · 24 sesiones</p>
+          <p className="text-[11px] uppercase tracking-[0.35em] font-bold opacity-60">Programa · Acompañamiento individual integral · 3 meses</p>
         </motion.div>
 
         <div className="h-px bg-brand-muted" />
@@ -47,7 +50,7 @@ const Investment = () => (
 
         <div className="space-y-4 pt-2">
           <a 
-            href="https://calendly.com/patopietra/new-meeting?month=2026-05"
+            href="https://wa.me/5491161361269?text=Hola%20Patricia%2C%20le%C3%AD%20sobre%20el%20Programa%20C%C3%B3digo%20Neutr%C3%B3n%20y%20quiero%20evaluar%20mi%20situaci%C3%B3n."
             target="_blank"
             rel="noopener noreferrer"
             className="w-full bg-brand-dark text-white px-6 py-4 md:py-5 rounded-sm text-[11px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.2em] font-bold hover:bg-brand-accent transition-all shadow-lg flex items-center justify-center text-center leading-tight"

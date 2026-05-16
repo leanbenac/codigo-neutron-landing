@@ -36,7 +36,7 @@ const EnergyAudit = () => {
   const diagnosis = getDiagnosis(avg);
 
   return (
-    <section className="py-16 md:py-24 px-4 sm:px-6 bg-brand-dark text-white rounded-[2.5rem] md:rounded-[4rem] mx-3 sm:mx-6 md:mx-8 relative overflow-hidden">
+    <section id="diagnostico" className="py-16 md:py-24 px-4 sm:px-6 bg-brand-dark text-white rounded-[2.5rem] md:rounded-[4rem] mx-3 sm:mx-6 md:mx-8 relative overflow-hidden">
       <div className="max-w-5xl mx-auto space-y-10 md:space-y-16 relative z-10">
 
         {/* Header */}
@@ -85,12 +85,12 @@ const EnergyAudit = () => {
             </p>
 
             <a 
-              href="https://calendly.com/patopietra/new-meeting?month=2026-05"
+              href="https://wa.me/5491161361269?text=Hola%20Patricia%2C%20le%C3%AD%20sobre%20el%20Programa%20C%C3%B3digo%20Neutr%C3%B3n%20y%20quiero%20evaluar%20mi%20situaci%C3%B3n."
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-brand-accent text-white py-4 md:py-5 rounded-full text-[11px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.3em] font-bold hover:scale-105 transition-all shadow-xl shadow-brand-accent/20 flex items-center justify-center text-center leading-tight"
+              className="bg-brand-accent text-white py-4 md:py-5 rounded-full text-[11px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.3em] font-bold hover:scale-105 transition-all shadow-xl shadow-brand-accent/20 flex items-center justify-center text-center leading-tight px-6"
             >
-              CONVERSAR SOBRE<br className="sm:hidden" /> MIS RESULTADOS
+              CONOCER LA PROPUESTA
             </a>
 
             {/* Score badge */}

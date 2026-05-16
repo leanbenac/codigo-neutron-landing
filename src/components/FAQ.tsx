@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "¿Cómo sé si es para mí?",
-    a: "Por eso existe la conversación inicial de 30 minutos. Si no tiene sentido para tu situación te lo digo directamente."
+    a: "Por eso existe la conversación inicial de 15 minutos. Si no tiene sentido para tu situación te lo digo directamente."
   },
   {
     q: "¿Cuáles son los medios de pago?",
@@ -29,14 +29,14 @@ const FAQItem = ({ q, a }: { q: string; a: string; key?: any }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="border-b border-brand-muted last:border-0">
-      <button 
+      <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex justify-between items-center text-left gap-4 py-5 group"
       >
         <h4 className="text-sm md:text-base font-bold tracking-tight text-brand-dark group-hover:text-brand-accent transition-colors leading-snug">
           {q}
         </h4>
-        <motion.div 
+        <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.2 }}
           className="text-brand-accent shrink-0"
@@ -44,10 +44,10 @@ const FAQItem = ({ q, a }: { q: string; a: string; key?: any }) => {
           <ChevronDown size={18} />
         </motion.div>
       </button>
-      <motion.div 
+      <motion.div
         initial={false}
-        animate={{ 
-          height: isOpen ? "auto" : 0, 
+        animate={{
+          height: isOpen ? "auto" : 0,
           opacity: isOpen ? 1 : 0,
           marginBottom: isOpen ? 16 : 0
         }}
