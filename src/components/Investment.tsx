@@ -33,8 +33,7 @@ const Investment = () => (
           viewport={{ once: true }}
           className="space-y-1"
         >
-          <p className="text-4xl md:text-6xl font-bold tracking-tighter text-brand-dark">USD 2.500</p>
-          <p className="text-[11px] uppercase tracking-[0.35em] font-bold opacity-60">Programa · Acompañamiento individual integral · 3 meses</p>
+          <p className="text-[11px] uppercase tracking-[0.35em] font-bold opacity-80 text-brand-dark">Programa · Acompañamiento individual integral · 3 meses</p>
         </motion.div>
 
         <div className="h-px bg-brand-muted" />
