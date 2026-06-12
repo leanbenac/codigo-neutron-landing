@@ -78,12 +78,12 @@ const Navbar = () => {
           <a href="#testimonios" className={`transition-colors ${activeSection === 'testimonios' ? 'text-brand-accent' : 'hover:text-brand-accent'}`}>Resultados</a>
           <a href="#inversion" className={`transition-colors ${activeSection === 'inversion' ? 'text-brand-accent' : 'hover:text-brand-accent'}`}>Inversión</a>
           <a 
-            href="https://calendly.com/patopietra/new-meeting" 
+            href="https://forms.gle/N7AT2DBgPaVGJEuk7" 
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-brand-dark text-white px-5 py-2.5 rounded-full hover:bg-brand-accent transition-colors flex items-center gap-2 text-[10px]"
           >
-            EVALUAR MI SITUACIÓN <ArrowRight size={12} />
+            APLICAR AL PROGRAMA <ArrowRight size={12} />
           </a>
         </div>
 
@@ -105,12 +105,12 @@ const Navbar = () => {
             <a href="#testimonios" onClick={() => setIsOpen(false)} className={`text-sm font-bold uppercase tracking-widest transition-colors ${activeSection === 'testimonios' ? 'text-brand-accent' : 'text-brand-dark hover:text-brand-accent'}`}>Resultados</a>
             <a href="#inversion" onClick={() => setIsOpen(false)} className={`text-sm font-bold uppercase tracking-widest transition-colors ${activeSection === 'inversion' ? 'text-brand-accent' : 'text-brand-dark hover:text-brand-accent'}`}>Inversión</a>
             <a 
-              href="https://calendly.com/patopietra/new-meeting"
+              href="https://forms.gle/N7AT2DBgPaVGJEuk7"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-dark text-white p-4 rounded-2xl text-center text-sm font-bold uppercase tracking-widest"
             >
-              EVALUAR MI SITUACIÓN
+              APLICAR A CÓDIGO NEUTRÓN
             </a>
           </div>
         </motion.div>

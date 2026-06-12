@@ -34,12 +34,12 @@ const Hero = () => (
       {/* CTA */}
       <div className="space-y-3 pt-4 w-full">
         <a 
-          href="https://calendly.com/patopietra/new-meeting"
+          href="https://forms.gle/N7AT2DBgPaVGJEuk7"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-brand-dark text-white w-full sm:w-auto px-10 py-5 rounded-md text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold hover:bg-brand-accent hover:scale-[1.02] hover:shadow-2xl hover:shadow-brand-accent/20 transition-all duration-500 flex sm:inline-flex items-center justify-center text-center leading-tight"
         >
-          EVALUAR MI SITUACIÓN
+          APLICAR A CÓDIGO NEUTRÓN
         </a>
         <p className="text-[10px] uppercase tracking-widest opacity-60 font-bold">15 minutos · Sin compromiso · Lugares limitados por mes</p>
       </div>

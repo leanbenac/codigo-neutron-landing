@@ -163,12 +163,12 @@ const EnergyAudit = () => {
                 </p>
 
                 <a 
-                  href="https://calendly.com/patopietra/new-meeting"
+                  href="https://forms.gle/N7AT2DBgPaVGJEuk7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-brand-accent text-white py-4 md:py-5 rounded-full text-[11px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.3em] font-bold hover:scale-105 transition-all shadow-xl shadow-brand-accent/20 flex items-center justify-center text-center leading-tight px-6"
                 >
-                  EVALUAR MI SITUACIÓN
+                  APLICAR A CÓDIGO NEUTRÓN
                 </a>
 
                 {/* Score badge */}

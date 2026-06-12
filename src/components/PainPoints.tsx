@@ -48,12 +48,12 @@ const PainPoints = () => {
 
             {/* Mini CTA for early-convinced users */}
             <a
-              href="https://calendly.com/patopietra/new-meeting"
+              href="https://forms.gle/N7AT2DBgPaVGJEuk7"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center gap-2 text-xs font-bold text-brand-accent hover:text-brand-dark transition-colors uppercase tracking-widest"
             >
-              ¿Te identificás? Conversemos →
+              Aplicar al programa →
             </a>
           </motion.div>
 

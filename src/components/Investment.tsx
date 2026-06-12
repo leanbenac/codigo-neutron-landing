@@ -48,17 +48,17 @@ const Investment = () => (
           <div className="space-y-1.5">
             <span className="text-xs md:text-sm uppercase tracking-[0.35em] font-bold text-brand-accent">Inversión en el programa</span>
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif italic text-brand-dark font-bold tracking-tight">
-              Te lo cuento en una llamada
+              Postularse al programa
             </h3>
           </div>
 
           <a 
-            href="https://calendly.com/patopietra/new-meeting"
+            href="https://forms.gle/N7AT2DBgPaVGJEuk7"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full bg-brand-dark text-white px-8 py-5 rounded-md text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold hover:bg-brand-accent transition-all shadow-lg flex items-center justify-center text-center leading-tight hover:scale-[1.01] duration-300"
           >
-            RESERVAR LA LLAMADA
+            APLICAR A CÓDIGO NEUTRÓN
           </a>
           
           <p className="text-[10px] font-light opacity-60 italic text-center leading-snug uppercase tracking-widest">
