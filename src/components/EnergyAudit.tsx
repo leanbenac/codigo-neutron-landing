@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { Lock } from 'lucide-react';
 
 const areas = [
   { id: 'paz', label: 'Paz Mental' },
@@ -27,9 +28,33 @@ const EnergyAudit = () => {
   const [scores, setScores] = useState<{ [key: string]: number }>({
     paz: 50, economia: 50, relaciones: 50, adaptabilidad: 50, salud: 50
   });
+  const [isUnlocked, setIsUnlocked] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (id: string, value: number) => {
     setScores(prev => ({ ...prev, [id]: value }));
+  };
+
+  const handleUnlock = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!name.trim() || !email.trim()) return;
+    
+    setIsSubmitting(true);
+    
+    // Fire Meta Pixel Lead event
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead', {
+        content_name: 'energy_audit_diagnostic',
+      });
+    }
+    
+    // Small delay for UX feel
+    await new Promise(resolve => setTimeout(resolve, 600));
+    
+    setIsUnlocked(true);
+    setIsSubmitting(false);
   };
 
   const avg = (Object.values(scores) as number[]).reduce((a, b) => a + b, 0) / 5;
@@ -71,32 +96,87 @@ const EnergyAudit = () => {
 
           {/* Result card */}
           <div className="bg-white/5 backdrop-blur-xl p-6 md:p-10 rounded-2xl md:rounded-[2.5rem] border border-white/10 space-y-6">
-            <div className="space-y-2">
-              <p className="text-[11px] uppercase tracking-[0.3em] font-bold opacity-60">Lectura de sistema</p>
-              <h3 className="text-2xl md:text-3xl font-serif italic leading-tight text-brand-accent">{diagnosis.title}</h3>
-            </div>
+            
+            {!isUnlocked ? (
+              /* Locked state: show blurred preview + form */
+              <>
+                <div className="space-y-2">
+                  <p className="text-[11px] uppercase tracking-[0.3em] font-bold opacity-60">Lectura de sistema</p>
+                  <h3 className="text-2xl md:text-3xl font-serif italic leading-tight text-brand-accent blur-sm select-none" aria-hidden="true">{diagnosis.title}</h3>
+                </div>
 
-            <p className="text-sm md:text-base text-white/90 font-light leading-relaxed">
-              {diagnosis.text}
-            </p>
+                <p className="text-sm text-white/40 font-light leading-relaxed blur-sm select-none" aria-hidden="true">
+                  {diagnosis.text}
+                </p>
 
-            <p className="text-xs font-light italic opacity-60 leading-relaxed">
-              En el proceso de Código Neutrón trabajamos para que tu balance sea la norma, no la excepción.
-            </p>
+                <div className="space-y-4 pt-2">
+                  <div className="flex items-center gap-2 justify-center">
+                    <Lock size={14} className="text-brand-accent" />
+                    <p className="text-xs font-bold uppercase tracking-widest text-brand-accent">Desbloqueá tu diagnóstico</p>
+                  </div>
+                  
+                  <form onSubmit={handleUnlock} className="space-y-3">
+                    <input
+                      type="text"
+                      placeholder="Tu nombre"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      required
+                      className="w-full bg-white/10 border border-white/15 rounded-lg px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-brand-accent/50 focus:ring-1 focus:ring-brand-accent/30 transition-all"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Tu email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                      className="w-full bg-white/10 border border-white/15 rounded-lg px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-brand-accent/50 focus:ring-1 focus:ring-brand-accent/30 transition-all"
+                    />
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full bg-brand-accent text-white py-4 rounded-full text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold hover:scale-[1.02] transition-all shadow-xl shadow-brand-accent/20 cursor-pointer disabled:opacity-60 disabled:cursor-wait"
+                    >
+                      {isSubmitting ? 'ANALIZANDO...' : 'VER MI DIAGNÓSTICO'}
+                    </button>
+                  </form>
+                  
+                  <p className="text-[10px] text-center text-white/30 font-light">
+                    Sin spam. Solo tu lectura personalizada.
+                  </p>
+                </div>
+              </>
+            ) : (
+              /* Unlocked state: show full diagnosis */
+              <>
+                <div className="space-y-2">
+                  <p className="text-[11px] uppercase tracking-[0.3em] font-bold opacity-60">Lectura de sistema</p>
+                  <h3 className="text-2xl md:text-3xl font-serif italic leading-tight text-brand-accent">{diagnosis.title}</h3>
+                </div>
 
-            <a 
-              href="https://wa.me/5491161361269?text=Hola%20Patricia%2C%20le%C3%AD%20sobre%20el%20Programa%20C%C3%B3digo%20Neutr%C3%B3n%20y%20quiero%20evaluar%20mi%20situaci%C3%B3n."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-brand-accent text-white py-4 md:py-5 rounded-full text-[11px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.3em] font-bold hover:scale-105 transition-all shadow-xl shadow-brand-accent/20 flex items-center justify-center text-center leading-tight px-6"
-            >
-              CONOCER LA PROPUESTA
-            </a>
+                <p className="text-sm md:text-base text-white/90 font-light leading-relaxed">
+                  {diagnosis.text}
+                </p>
 
-            {/* Score badge */}
-            <div className="text-center pt-1">
-              <span className="text-4xl font-serif italic text-white/10 font-bold">{Math.round(avg)}%</span>
-            </div>
+                <p className="text-xs font-light italic opacity-60 leading-relaxed">
+                  En el proceso de Código Neutrón trabajamos para que tu balance sea la norma, no la excepción.
+                </p>
+
+                <a 
+                  href="https://calendly.com/patopietra/new-meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-brand-accent text-white py-4 md:py-5 rounded-full text-[11px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.3em] font-bold hover:scale-105 transition-all shadow-xl shadow-brand-accent/20 flex items-center justify-center text-center leading-tight px-6"
+                >
+                  EVALUAR MI SITUACIÓN
+                </a>
+
+                {/* Score badge */}
+                <div className="text-center pt-1">
+                  <span className="text-4xl font-serif italic text-white/10 font-bold">{Math.round(avg)}%</span>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>

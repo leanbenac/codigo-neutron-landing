@@ -15,14 +15,14 @@ const FinalCTA = () => (
 
       <div className="space-y-4 w-full">
         <a
-          href="https://wa.me/5491161361269?text=Hola%20Patricia%2C%20le%C3%AD%20sobre%20el%20Programa%20C%C3%B3digo%20Neutr%C3%B3n%20y%20quiero%20evaluar%20mi%20situaci%C3%B3n."
+          href="https://calendly.com/patopietra/new-meeting"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-brand-dark text-white w-full sm:w-auto px-12 py-6 rounded-md text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold hover:bg-brand-accent hover:scale-[1.02] hover:shadow-2xl hover:shadow-brand-accent/20 transition-all duration-500 flex sm:inline-flex items-center justify-center text-center leading-tight shadow-xl"
         >
-          CONOCER LA PROPUESTA
+          EVALUAR MI SITUACIÓN
         </a>
-        <p className="text-[10px] uppercase tracking-[0.4em] font-bold opacity-30">Lugares limitados · Respuesta en menos de 24 horas</p>
+        <p className="text-[10px] uppercase tracking-[0.4em] font-bold opacity-30">Trabajo con un máximo de 5 personas por mes</p>
       </div>
     </div>
 

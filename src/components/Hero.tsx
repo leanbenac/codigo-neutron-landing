@@ -34,14 +34,32 @@ const Hero = () => (
       {/* CTA */}
       <div className="space-y-3 pt-4 w-full">
         <a 
-          href="https://wa.me/5491161361269?text=Hola%20Patricia%2C%20le%C3%AD%20sobre%20el%20Programa%20C%C3%B3digo%20Neutr%C3%B3n%20y%20quiero%20evaluar%20mi%20situaci%C3%B3n."
+          href="https://calendly.com/patopietra/new-meeting"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-brand-dark text-white w-full sm:w-auto px-10 py-5 rounded-md text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold hover:bg-brand-accent hover:scale-[1.02] hover:shadow-2xl hover:shadow-brand-accent/20 transition-all duration-500 flex sm:inline-flex items-center justify-center text-center leading-tight"
         >
-          CONOCER LA PROPUESTA
+          EVALUAR MI SITUACIÓN
         </a>
-        <p className="text-[10px] uppercase tracking-widest opacity-60 font-bold">15 minutos · Sin presión</p>
+        <p className="text-[10px] uppercase tracking-widest opacity-60 font-bold">15 minutos · Sin compromiso · Lugares limitados por mes</p>
+      </div>
+
+      {/* Social proof strip */}
+      <div className="flex flex-wrap justify-center gap-6 md:gap-10 pt-4">
+        <div className="text-center">
+          <p className="text-xl md:text-2xl font-serif italic text-brand-accent font-bold">13+</p>
+          <p className="text-[9px] uppercase tracking-widest text-brand-dark/50 font-bold">Años de experiencia</p>
+        </div>
+        <div className="w-px h-8 bg-brand-muted self-center hidden sm:block" />
+        <div className="text-center">
+          <p className="text-xl md:text-2xl font-serif italic text-brand-accent font-bold">3</p>
+          <p className="text-[9px] uppercase tracking-widest text-brand-dark/50 font-bold">Países</p>
+        </div>
+        <div className="w-px h-8 bg-brand-muted self-center hidden sm:block" />
+        <div className="text-center">
+          <p className="text-xl md:text-2xl font-serif italic text-brand-accent font-bold">5</p>
+          <p className="text-[9px] uppercase tracking-widest text-brand-dark/50 font-bold">Áreas de medición</p>
+        </div>
       </div>
     </motion.div>
 

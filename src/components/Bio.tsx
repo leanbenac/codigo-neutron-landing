@@ -14,7 +14,7 @@ const Bio = () => (
         >
           <div className="aspect-[3/4] md:aspect-[4/5] lg:aspect-[3/4] max-w-sm mx-auto rounded-2xl md:rounded-3xl overflow-hidden bg-brand-muted/20">
             <img 
-              src="https://coachinginline.weebly.com/uploads/1/7/1/5/17154702/published/generated-image-october-31-2025-12-19pm-2-1.jpg?1778345920" 
+              src="/patopietra.jpg" 
               alt="Patricia Pietrasanta" 
               loading="lazy"
               className="w-full h-full object-cover object-top"

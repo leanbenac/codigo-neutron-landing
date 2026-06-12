@@ -78,12 +78,12 @@ const Navbar = () => {
           <a href="#testimonios" className={`transition-colors ${activeSection === 'testimonios' ? 'text-brand-accent' : 'hover:text-brand-accent'}`}>Resultados</a>
           <a href="#inversion" className={`transition-colors ${activeSection === 'inversion' ? 'text-brand-accent' : 'hover:text-brand-accent'}`}>Inversión</a>
           <a 
-            href="https://wa.me/5491161361269?text=Hola%20Patricia%2C%20le%C3%AD%20sobre%20el%20Programa%20C%C3%B3digo%20Neutr%C3%B3n%20y%20quiero%20evaluar%20mi%20situaci%C3%B3n." 
+            href="https://calendly.com/patopietra/new-meeting" 
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-brand-dark text-white px-5 py-2.5 rounded-full hover:bg-brand-accent transition-colors flex items-center gap-2 text-[10px]"
           >
-            CONOCER LA PROPUESTA <ArrowRight size={12} />
+            EVALUAR MI SITUACIÓN <ArrowRight size={12} />
           </a>
         </div>
 
@@ -105,12 +105,12 @@ const Navbar = () => {
             <a href="#testimonios" onClick={() => setIsOpen(false)} className={`text-sm font-bold uppercase tracking-widest transition-colors ${activeSection === 'testimonios' ? 'text-brand-accent' : 'text-brand-dark hover:text-brand-accent'}`}>Resultados</a>
             <a href="#inversion" onClick={() => setIsOpen(false)} className={`text-sm font-bold uppercase tracking-widest transition-colors ${activeSection === 'inversion' ? 'text-brand-accent' : 'text-brand-dark hover:text-brand-accent'}`}>Inversión</a>
             <a 
-              href="https://wa.me/5491161361269?text=Hola%20Patricia%2C%20le%C3%AD%20sobre%20el%20Programa%20C%C3%B3digo%20Neutr%C3%B3n%20y%20quiero%20evaluar%20mi%20situaci%C3%B3n."
+              href="https://calendly.com/patopietra/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-dark text-white p-4 rounded-2xl text-center text-sm font-bold uppercase tracking-widest"
             >
-              CONOCER LA PROPUESTA
+              EVALUAR MI SITUACIÓN
             </a>
           </div>
         </motion.div>

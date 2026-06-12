@@ -45,6 +45,16 @@ const PainPoints = () => {
             <p className="text-base md:text-lg font-normal text-brand-dark/90 leading-relaxed max-w-sm">
               El agotamiento no siempre es falta de ganas. A veces es el resultado de un sistema interno que opera con demasiada fricción y un alto costo de procesamiento.
             </p>
+
+            {/* Mini CTA for early-convinced users */}
+            <a
+              href="https://calendly.com/patopietra/new-meeting"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline-flex items-center gap-2 text-xs font-bold text-brand-accent hover:text-brand-dark transition-colors uppercase tracking-widest"
+            >
+              ¿Te identificás? Conversemos →
+            </a>
           </motion.div>
 
         </div>
