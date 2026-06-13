@@ -26,36 +26,47 @@ const Gracias = () => {
 
         {/* Message */}
         <div className="space-y-4 md:space-y-5">
-          <p className="text-[11px] uppercase tracking-[0.45em] font-bold text-brand-accent">¡Llamada Reservada!</p>
-          <h1 className="text-4xl sm:text-5xl font-serif tracking-tight font-light leading-tight">
-            Tu diagnóstico está <br />
-            <span className="italic font-light text-brand-accent">en camino.</span>
+          <p className="text-[11px] uppercase tracking-[0.45em] font-bold text-brand-accent">Aplicación Recibida</p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-tight font-light leading-tight">
+            Tu aplicación fue <br />
+            <span className="italic font-light text-brand-accent">recibida correctamente.</span>
           </h1>
           
           <div className="h-px w-12 bg-brand-accent mx-auto" />
           
-          <p className="text-sm md:text-base font-light text-white/80 max-w-md mx-auto leading-relaxed">
-            Hemos registrado tu reserva con éxito. Por favor, revisá tu casilla de correo electrónico, donde recibirás la confirmación y el enlace de Google Meet para nuestra sesión.
+          <p className="text-sm md:text-base font-light text-white/80 max-w-lg mx-auto leading-relaxed">
+            Gracias por completar el formulario de admisión de Código Neutrón. Voy a revisar personalmente tus respuestas para comprender mejor tu situación actual, los resultados que buscás lograr y el nivel de compromiso con el que llegás a este proceso.
           </p>
         </div>
 
         {/* Instructions */}
-        <div className="p-5 bg-white/5 border border-white/10 rounded-2xl text-left space-y-3 max-w-md mx-auto">
-          <h4 className="text-xs uppercase tracking-wider font-bold text-brand-accent">Próximos pasos importantes:</h4>
-          <ul className="space-y-2.5 text-xs text-white/70 font-light">
-            <li className="flex gap-2 items-start">
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-accent mt-1.5 shrink-0" />
-              <span>Agendá la fecha en tu calendario para no olvidarla.</span>
+        <div className="p-5 bg-white/5 border border-white/10 rounded-2xl text-left space-y-4 max-w-lg mx-auto">
+          <h4 className="text-xs uppercase tracking-wider font-bold text-brand-accent text-center pb-2 border-b border-white/10">Próximos pasos:</h4>
+          <ul className="space-y-3 text-sm text-white/80 font-light">
+            <li className="flex gap-3 items-start">
+              <CheckCircle2 size={16} className="text-brand-accent shrink-0 mt-0.5" />
+              <span>Revisaré tu aplicación.</span>
             </li>
-            <li className="flex gap-2 items-start">
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-accent mt-1.5 shrink-0" />
-              <span>Si no encontrás el mail de confirmación, revisá la carpeta de Spam o Promociones.</span>
+            <li className="flex gap-3 items-start">
+              <CheckCircle2 size={16} className="text-brand-accent shrink-0 mt-0.5" />
+              <span>Si detecto un buen encaje entre tu situación y la mentoría, me pondré en contacto para coordinar una sesión diagnóstica de 15 minutos.</span>
             </li>
-            <li className="flex gap-2 items-start">
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-accent mt-1.5 shrink-0" />
-              <span>Para la llamada, buscá un lugar tranquilo y con buena conexión.</span>
+            <li className="flex gap-3 items-start">
+              <CheckCircle2 size={16} className="text-brand-accent shrink-0 mt-0.5" />
+              <span>En esa conversación analizaremos tu situación actual y definiremos si este proceso es el adecuado para vos.</span>
             </li>
           </ul>
+          
+          <div className="pt-3 mt-3 border-t border-white/10 text-center">
+            <p className="text-sm text-brand-accent font-medium mb-4">
+              Mientras tanto, revisá tu correo electrónico y tu WhatsApp durante las próximas 48 horas.
+            </p>
+            <p className="text-xs text-white/60 font-light italic">
+              Gracias por tu confianza.<br/>
+              Patricia Pietrasanta<br/>
+              Código Neutrón
+            </p>
+          </div>
         </div>
 
         {/* Button */}
